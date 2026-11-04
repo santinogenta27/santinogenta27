@@ -44,12 +44,30 @@ and ships an embeddable AI widget for websites.
 
 ---
 
-## 🧰 More projects
+### 👻 GhostOperator: autonomous web agent
+**Problem:** collecting data from websites by hand is slow, and classic scrapers break whenever a page changes.
+**Solution:** give the agent a goal in plain language. It opens a real Chromium browser and runs a
+**perceive → reason → act → validate** loop until the mission is done, streaming every step live to a dashboard.
 
-| Project | What it does | Links |
-|---|---|---|
-| **GhostOperator** | Autonomous browser agent: perceive → reason → act → validate in a real Chromium, streamed live to a dashboard | 🎥 [Video](https://youtu.be/XUK7UIzj-vI) · 💻 [Code](https://github.com/santinogenta27/Autonomous-Web-Agent) |
-| **MCP Factory** | Generates typed, tested MCP servers (stdio, HTTP, Docker) from one Pydantic blueprint, with built-in evals | 💻 [Code](https://github.com/santinogenta27/mcp-factory) |
+- Exports structured results to **JSON and CSV** plus a **video recording** of every mission
+- Live dashboard over WebSockets: agent reasoning, actions, screenshots and metrics in real time
+- Multi-provider (Gemini / Claude) with retries and backoff · labelled demo fallback when no API key is available
+- **Stack:** Python · FastAPI · browser-use · Playwright · WebSockets · React 19 · Vite · Tailwind · Framer Motion
+
+🎥 [Video](https://youtu.be/XUK7UIzj-vI) · 💻 [Code](https://github.com/santinogenta27/Autonomous-Web-Agent)
+
+### 🏭 MCP Factory: production tool-calling infrastructure
+**Problem:** every AI agent needs tools, and hand-written MCP servers drift out of spec, accept malformed
+inputs and have no retries, cost tracking or tests.
+**Solution:** describe the tools once in a Pydantic-validated blueprint, and a Jinja2 compiler generates a typed,
+documented, tested MCP server ready for Claude, GPT or Gemini agents.
+
+- One blueprint → **stdio MCP, FastAPI HTTP and Docker image**, all identical
+- Strict inputs (`extra="forbid"`) · `ToolCaller` with retries, timing and token-aware cost logging
+- Built-in **accuracy and latency evals** that run on every commit · multi-stage, non-root Docker image
+- **Stack:** Python · MCP SDK (FastMCP) · Pydantic v2 · Jinja2 · FastAPI · pytest · Docker
+
+💻 [Code](https://github.com/santinogenta27/mcp-factory)
 
 ---
 
