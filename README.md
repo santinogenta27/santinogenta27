@@ -5,7 +5,7 @@
 I design agents that are **reliable, not just impressive**: deterministic guardrails around the LLM,
 human-in-the-loop for risky actions, automated evaluation in CI, and measured cost and latency.
 
-**Open to AI Engineer / LLM Engineer roles.**
+**Open to AI Engineer / LLM Engineer roles.** → [LinkedIn](https://www.linkedin.com/in/santinogenta) · [santinogenta2325@gmail.com](mailto:santinogenta2325@gmail.com)
 
 ---
 
