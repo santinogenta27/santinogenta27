@@ -1,0 +1,61 @@
+# Hi, I'm Santino Genta 👋
+
+### AI Engineer · I build production-grade AI agents: multi-agent systems, RAG, tool calling (MCP) and evals
+
+I design agents that are **reliable, not just impressive**: deterministic guardrails around the LLM,
+human-in-the-loop for risky actions, automated evaluation in CI, and measured cost and latency.
+
+**Open to AI Engineer / LLM Engineer roles.**
+
+---
+
+## ⭐ Featured projects
+
+### ⚡ NexusAgent: multi-agent deep research system
+**Problem:** competitive research is slow, and LLM reports invent facts.
+**Solution:** a supervisor, retrieval, sandbox, synthesizer and critic agent pipeline that tests hypotheses
+against a company's live public pages and checks every claim against verbatim citations before reporting.
+
+- **~19 s** per full report · **$0.0115** per query · **62/62** citations verified verbatim · **130/130** tests passing
+- **Stack:** TypeScript · Gemini · Genkit · Express · React 19 · Tailwind
+
+🌐 [**Live demo**](https://nexus-agent-rub3.onrender.com) · 🎥 [Video](https://youtu.be/h7WO4Wd5TJY) · 💻 [Code](https://github.com/santinogenta27/nexus-agent)
+
+### 🏛️ SentinelOps: autonomous financial dispute resolution agent
+**Problem:** automating refunds with an LLM is risky: one hallucination or prompt injection moves real money.
+**Solution:** a LangGraph agent where *the LLM understands language and code decides money*. Payouts come only
+from the verified ledger; refunds over $200 or high-risk cases stop for human approval; an LLM judge scores
+every reply before it is sent.
+
+- Self-correction loops · Human-in-the-loop gate · LLM-as-a-Judge · circuit breaker with deterministic fallback
+- **125 tests** · eval suite as a CI gate · `mypy --strict` · Stripe (test mode) integration
+- **Stack:** Python · LangGraph · FastAPI · Pydantic v2 · Gemini / Groq
+
+💻 [Code](https://github.com/santinogenta27/sentinelops)
+
+### 📄 DocChat Enterprise: AI agents over private company documents
+**Problem:** employees and customers can't find answers buried in hundreds of internal PDFs.
+**Solution:** a RAG platform that ingests 100+ PDFs (with OCR), answers with grounded responses across documents,
+and ships an embeddable AI widget for websites.
+
+- **Stack:** Python · FastAPI · LangChain · ChromaDB · OpenAI
+
+🌐 [**Live demo**](https://www.enterprisedataai.com/) · 🎥 [Video](https://www.youtube.com/watch?v=wBtSqWNyFdI) · 💻 [Code](https://github.com/santinogenta27/AI-Agents-for-Enterprise-Private-Data)
+
+---
+
+## 🧰 More projects
+
+| Project | What it does | Links |
+|---|---|---|
+| **GhostOperator** | Autonomous browser agent: perceive → reason → act → validate in a real Chromium, streamed live to a dashboard | 🎥 [Video](https://youtu.be/XUK7UIzj-vI) · 💻 [Code](https://github.com/santinogenta27/Autonomous-Web-Agent) |
+| **MCP Factory** | Generates typed, tested MCP servers (stdio, HTTP, Docker) from one Pydantic blueprint, with built-in evals | 💻 [Code](https://github.com/santinogenta27/mcp-factory) |
+
+---
+
+## 🛠️ Tech
+
+**AI / LLM:** LangGraph · LangChain · Genkit · MCP · RAG · LLM-as-a-Judge · evals · Gemini · Claude · OpenAI · Groq
+**Backend:** Python · TypeScript · FastAPI · Express · Pydantic v2 · SQLite · ChromaDB · Docker
+**Frontend:** React 19 · Vite · Tailwind
+**Quality:** pytest · mypy --strict · CI eval gates · Playwright
