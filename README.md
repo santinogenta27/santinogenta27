@@ -31,7 +31,7 @@ every reply before it is sent.
 - **125 tests** · eval suite as a CI gate · `mypy --strict` · Stripe (test mode) integration
 - **Stack:** Python · LangGraph · FastAPI · Pydantic v2 · Gemini / Groq
 
-🎥 [**Video demo**](https://youtu.be/5cUCUeijuZU) · 💻 [Code](https://github.com/santinogenta27/sentinelops)
+🌐 [**Live demo**](https://sentinelops-demo.onrender.com/) · 🎥 [Video demo](https://youtu.be/5cUCUeijuZU) · 💻 [Code](https://github.com/santinogenta27/sentinelops)
 
 ### 📄 DocChat Enterprise: AI agents over private company documents
 **Problem:** employees and customers can't find answers buried in hundreds of internal PDFs.<br>
