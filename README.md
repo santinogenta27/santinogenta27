@@ -11,6 +11,21 @@ human-in-the-loop for risky actions, automated evaluation in CI, and measured co
 
 ## ⭐ Featured projects
 
+### 🏢 Enterprise Data AI: AI customer support agents that resolve requests
+**Problem:** most support bots only answer from a FAQ. They can't touch business systems, guess when the answer
+isn't in their data, and escalate without context, so customers repeat themselves.<br>
+**Solution:** an agent that resolves the request end to end. It answers from company data with the source
+attached, acts in business systems through MCP, asks a person before risky actions and hands off with full context,
+on WhatsApp, email and web chat.
+
+- **Hybrid RAG** (BM25 + vector search) over policies, tickets, emails, transcripts and scanned PDFs (OCR), with cited sources
+- **Tool use via MCP:** orders, inventory, payments, helpdesk and CRM, with per-tool rules you control
+- **Human-in-the-loop:** refunds above your limit wait for approval · no source, no guess: it hands off instead
+- **Full audit trail:** every tool call logged with its time, result and approver
+- **Stack:** Python · FastAPI · LangChain · ChromaDB · MCP · OpenAI
+
+🌐 [**Website & demo**](https://www.enterprisedataai.com/) · 🎥 [Video](https://www.enterprisedataai.com/#demo) · 💻 [Code](https://github.com/santinogenta27/AI-Agents-for-Enterprise-Private-Data)
+
 ### ⚡ NexusAgent: multi-agent deep research system
 **Problem:** competitive research is slow, and LLM reports invent facts.<br>
 **Solution:** a supervisor, retrieval, sandbox, synthesizer and critic agent pipeline that tests hypotheses
@@ -32,15 +47,6 @@ every reply before it is sent.
 - **Stack:** Python · LangGraph · FastAPI · Pydantic v2 · Gemini / Groq
 
 🌐 [**Live demo**](https://sentinelops-demo.onrender.com/) · 🎥 [Video demo](https://youtu.be/5cUCUeijuZU) · 💻 [Code](https://github.com/santinogenta27/sentinelops)
-
-### 📄 DocChat Enterprise: AI agents over private company documents
-**Problem:** employees and customers can't find answers buried in hundreds of internal PDFs.<br>
-**Solution:** a RAG platform that ingests 100+ PDFs (with OCR), answers with grounded responses across documents,
-and ships an embeddable AI widget for websites.
-
-- **Stack:** Python · FastAPI · LangChain · ChromaDB · OpenAI
-
-🌐 [**Live demo**](https://www.enterprisedataai.com/) · 🎥 [Video](https://www.youtube.com/watch?v=wBtSqWNyFdI) · 💻 [Code](https://github.com/santinogenta27/AI-Agents-for-Enterprise-Private-Data)
 
 ---
 
