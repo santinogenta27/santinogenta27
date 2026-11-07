@@ -22,7 +22,6 @@ on WhatsApp, email and web chat.
 - **Tool use via MCP:** orders, inventory, payments, helpdesk and CRM, with per-tool rules you control
 - **Human-in-the-loop:** refunds above your limit wait for approval · no source, no guess: it hands off instead
 - **Full audit trail:** every tool call logged with its time, result and approver
-- **Stack:** Python · FastAPI · LangChain · ChromaDB · MCP · OpenAI
 
 🌐 [**Website & demo**](https://www.enterprisedataai.com/) · 🎥 [Video](https://www.enterprisedataai.com/#demo) · 💻 [Code](https://github.com/santinogenta27/AI-Agents-for-Enterprise-Private-Data)
 
